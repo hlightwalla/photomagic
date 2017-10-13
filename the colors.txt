@@ -1,0 +1,42 @@
+
+NB: Source files all contained in the folder BMP PROG
+
+0,0,255 - red
+0,0,128 - dark purple
+
+255255	- purple
+255
+0  	- black
+
+in our tests, these are some interesting findings:-
+
+1.) colours mapping begins at character number 54.
+2.) each character beyond that forms one part of three      parts that represent a pixel, the ord number being     that of intensity (255 being the maximum) the order     of which is- blue,green,red (alphabetically)- 0     typically resembles black.
+
+3.) A very interesting conclusion- mapping does begin from character number 54, as another bitmap, much larger and varied, shows.
+
+4.) that wasn't the case when tried with a photograph, but there must be some other consistency.
+
+5.) It turns out that the character number 10, to be precise, would contain the number, usually 54. 54, is the character number from which pixel light intensities are being recorded. On one case, it had 70, and it did seem that the recording did begin from 70. More tests to be done, hopefully to uncover some consistency there...
+
+6.) This is not a hundred percent accurate- but it MAY be. Anyway, we will assume it is, for the further experiments. The 10th character holds the character number of pixel definition beginning.
+
+7.) First application- Alter the colors of a bitmap, by incrementing all intensities by one, except for 255, which will be put to 0. Lets try it! name:- altercolor.exe
+
+8.) A beautiful, beautiful, resounding success!!! SHUKUR KHUDANO!! Beyond my wildest dreams...
+have managed to create-
+> lighten.exe - an application that actually brightens pictures, photos...etc
+
+> darken.exe - an application that darkens pics and photos.
+
+- next step, literal colour alteration, like changing colour of clothes, skin...etc etc!! this will e great fun!!!
+
+19/07/2005
+
+have been extremely successful at the 'colour warping' applications that I've created- a summary of the work are the cool eminem pictures that are in the folder 'eminem pics'. 5 different renditions made possible.
+
+Next step planned- to actually 'create' pictures. Convert textfiles...applications...etc etc into BMPs and vice versa, to see the effect!That should be exciting.
+
+p.s. all the source files for these research tools are in C:\pascalfeats\bmp prog
+
+- have managed to create a good app getordin.exe to help obtain ord values. Interesting finding is - no ord above 255- ord for 'white' or maximum intensity (in picture generation of bitmaps) logical conclusion is that most probably, 255 IS the maximum ascii,ANSI,EBDCIC or whatever ord number and therefore microsoft took full advantage of 0 to 255 to represent the entire colour spectrum. However, if there were a new system implementing maybe 500 codes, spectrum could be readjusted to the 500 values- allowing for much greater colour flexibility i.e completely new colours may be seen, however, admittedly 255 discrete values seems an adequate representation for now.
