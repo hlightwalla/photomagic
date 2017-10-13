@@ -11,7 +11,7 @@ NB: Source files all contained in the folder BMP PROG
 in our tests, these are some interesting findings:-
 
 1.) colours mapping begins at character number 54.
-2.) each character beyond that forms one part of three      parts that represent a pixel, the ord number being     that of intensity (255 being the maximum) the order     of which is- blue,green,red (alphabetically)- 0     typically resembles black.
+2.) each character beyond that forms one part of three parts that represent a pixel, the ord number being     that of intensity (255 being the maximum) the order of which is- blue,green,red (alphabetically)- 0     typically resembles black.
 
 3.) A very interesting conclusion- mapping does begin from character number 54, as another bitmap, much larger and varied, shows.
 
@@ -23,13 +23,13 @@ in our tests, these are some interesting findings:-
 
 7.) First application- Alter the colors of a bitmap, by incrementing all intensities by one, except for 255, which will be put to 0. Lets try it! name:- altercolor.exe
 
-8.) A beautiful, beautiful, resounding success!!! SHUKUR KHUDANO!! Beyond my wildest dreams...
+8.) A beautiful, beautiful, resounding success!!! Beyond my wildest dreams...
 have managed to create-
 > lighten.exe - an application that actually brightens pictures, photos...etc
 
 > darken.exe - an application that darkens pics and photos.
 
-- next step, literal colour alteration, like changing colour of clothes, skin...etc etc!! this will e great fun!!!
+- next step, literal colour alteration, like changing colour of clothes, skin...etc etc!! this will be great fun!!!
 
 19/07/2005
 
